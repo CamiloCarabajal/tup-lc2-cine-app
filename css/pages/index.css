@@ -1,0 +1,99 @@
+#form-movie-new {
+    display: flex;
+    flex-direction: column;  /*Para moverlo donde va al buscador de codigo*/
+    align-items: center;
+  }
+.form-container {
+    display: flex;
+    flex-direction: row;    /*Para moverlo donde va al buscador de codigo*/
+    gap: 10px;
+    padding: 10px;
+  }
+  .form-container > div {
+    display: flex;
+    justify-content: space-between;    /* > Es para indicarle a quien de ese contenedor*/
+  }
+body{
+    background-color: #e0e0e0; 
+}
+.sec_peliculas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1000px;
+    margin: 0 auto; 
+    width: 100%;
+    justify-content: space-between;
+}
+.contenedorPeliculas{
+    margin-bottom: 10px;
+}
+
+.contenedorPeliculas img{
+    width: 100%;
+    border-radius: 15px;
+}
+.contenedorPeliculas > p{
+    color:cornflowerblue;
+}
+
+.paginacion {
+    position: static ;
+    bottom: 10px ;
+    width: auto ;
+    display: flex;
+    justify-content: center;
+    gap: 15px ;
+    padding: 10px ;
+}
+
+.paginacion button {
+    cursor: pointer;
+    border:  1px solid #373c3c;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 30px;
+    width: 90px;
+    background-color: #7f8c8d;
+    color: white;
+    border-radius: 50px;
+    box-shadow: 0px 3px 0px #373c3c; /* Agregando una sombra*/
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: 600; /*Ponemos la letras en negrita*/
+    transition: .3s ease all;
+}
+
+.paginacion button:hover {
+    background-color: var(--color-back-active);
+}
+
+/*Estilos Generales Botones Favoritos*/
+.button {
+    background: #7f8c8d;
+    color: white;
+    display: block ;
+    font-size: 15px;
+    margin: 15px auto;
+    padding: 10px 0;
+    text-align: center;
+    width: 200px;
+    text-decoration: none;
+    box-shadow: 0px 3px 0px #373c3c;
+}
+
+.button span {
+    margin-right: 10px;
+}
+
+.button.medium {
+    width: 150px;
+}
+
+.button.radius {
+    border-radius: 50px;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 0px;
+}

@@ -7,6 +7,7 @@
   <title>TUP LC2 - TP Integrador - Cine</title>
   <!-- Estilos CSS -->
   <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/pages/index.css" />
 </head>
 
 <body>
@@ -29,19 +30,24 @@
     <h2>Últimas Películas en Cartelera</h2>
     <section id="form-movie-new">
       <!--Seccion para agregar una pelicula favorita por codigo-->
-      <form action="/favorities.html"> <!--Pusimos favorites en el action para darnos cuenta y simular que cuando el usuario haga click este form debe llevar info-->
-        <input type="button" name="fpelicula"><br>
-        <button type="submit">Agregar a Favoritos</button>
+      <p>Agregar Película Favorita por Código:</p>
+      <form action="" class="form-container"> <!--PONER CON UN INPUT-->
+       <div> 
+        <input type="text" name="fpelicula">
+      </div>
+        <button type="submit">Agregar</button>
       </form>
     </section>
-    <section id="sec-messages"> <!--Agregamos el mensaje-->
-<!--Aca va el form de mensajes(que todavia no funciona como tal hasta avanzar en la materia)-->
-     <form>
+    
+    <section id="sec-messages">
+       <!--Agregamos el mensaje-->
+              <!--Aca va el form de mensajes(que todavia no funciona)-->
+     <!--<form>
       <p class="mensaje-favoritos" id="agregada-favoritos">Película agregada con éxito</p>
       <p class="mensaje-favoritos" id="error-favoritos">Error: La Película seleccionada no se encuentra en la API o se produjo un
         error al consultar</p>
         <p class="mensaje-favoritos" id="ya-existe">La Película ingresada ya se encuentra almacenada</p>
-      </form> 
+      </form> -->
 
       <!--Seccion para mensajes-->
     </section>
@@ -53,9 +59,45 @@
         <p><b>Titulo Original: </b>Creed III</p>
         <p><b>Idioma Original: </b>en</p>
         <p><b>Año: </b>2023-03-01</p>
+        <button class="button radius">
+          <span>Agregar a Favoritos</span>
+        </button>
       </div>
       <!--Seccion visualizacion de peliculas-->
-      <div class="contenedorPeliculas" id="contenedorPeliculas"></div>
+      <!--<div class="contenedorPeliculas" id="contenedorPeliculas"></div>-->
+      <div class="contenedorPeliculas">
+        <img src="https://image.tmdb.org/t/p/w500/fcFMd3HdyX7r5gtFwVnn2qr5Yhq.jpg" alt="imgPeliculaCreed">
+        <h3>Creed III</h3>
+        <p><b>Codigo: </b>677179</p>
+        <p><b>Titulo Original: </b>Creed III</p>
+        <p><b>Idioma Original: </b>en</p>
+        <p><b>Año: </b>2023-03-01</p>
+        <button class="button radius">
+          <span> Agregar a Favoritos</span>
+        </button>
+      </div>
+      <div class="contenedorPeliculas">
+        <img src="https://image.tmdb.org/t/p/w500/fcFMd3HdyX7r5gtFwVnn2qr5Yhq.jpg" alt="imgPeliculaCreed">
+        <h3>Creed III</h3>
+        <p><b>Codigo: </b>677179</p>
+        <p><b>Titulo Original: </b>Creed III</p>
+        <p><b>Idioma Original: </b>en</p>
+        <p><b>Año: </b>2023-03-01</p>
+        <button class="button radius">
+          <span>Agregar a Favoritos</span>
+        </button>
+      </div>
+      <div class="contenedorPeliculas">
+        <img src="https://image.tmdb.org/t/p/w500/fcFMd3HdyX7r5gtFwVnn2qr5Yhq.jpg" alt="imgPeliculaCreed">
+        <h3>Creed III</h3>
+        <p><b>Codigo: </b>677179</p>
+        <p><b>Titulo Original: </b>Creed III</p>
+        <p><b>Idioma Original: </b>en</p>
+        <p><b>Año: </b>2023-03-01</p>
+        <button class="button radius">
+          <span>Agregar a Favoritos</span>
+        </button>
+      </div>
     </section>
     <section id="sec_paginador_peliculas">
       <!--Seccion de Paginacion-->
