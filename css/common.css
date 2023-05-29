@@ -92,6 +92,7 @@ h2 {
 h3 {
   color: var(--color-theme);
   margin: 8px 0;
+  text-align: center;
 }
 main section {
   display: flex;
@@ -173,4 +174,17 @@ main p {
 }
 .verde{
   background-color:#28a745 ;
+}
+.icono-cabecera {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.icono-cabecera > img {
+  width: 50px;
+}
+/*TITULO PRINCIPAL*/
+.intro-pag{
+  text-shadow: 0px 3px 5px #373c3c;
 }

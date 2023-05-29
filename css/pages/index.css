@@ -1,3 +1,4 @@
+/*Agregar y campo de texto*/
 #form-movie-new {
     display: flex;
     flex-direction: column;  /*Para moverlo donde va al buscador de codigo*/
@@ -16,6 +17,8 @@
 body{
     background-color: #e0e0e0; 
 }
+
+/*PELICULAS*/
 .sec_peliculas{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -24,18 +27,44 @@ body{
     width: 100%;
     justify-content: space-between;
 }
-.contenedorPeliculas{
+.contenedor-Peliculas{
     margin-bottom: 10px;
 }
 
-.contenedorPeliculas img{
+.contenedor-Peliculas img{
     width: 100%;
     border-radius: 15px;
 }
-.contenedorPeliculas > p{
+.contenedor-Peliculas > p{
     color:cornflowerblue;
 }
-
+.contenedor-infopelicula {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .contenedor-infopelicula > img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Es para cubrir el  contenedor */
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+  .contenedor-infopelicula > h3 {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    height: 50px;
+  }
+  .contenedor-infopelicula p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    padding: 0%;
+    margin: 0;
+    font-size: 12px;
+    color: var(--color-active);
+  }
+/*BUTTON*/
 .paginacion {
     position: static ;
     bottom: 10px ;
@@ -53,22 +82,17 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 30px;
-    width: 90px;
-    background-color: #7f8c8d;
+    height: 40px;
+    width: 120px;
+    background-color: #460e3e;
     color: white;
     border-radius: 50px;
-    box-shadow: 0px 3px 0px #373c3c; /* Agregando una sombra*/
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     font-weight: 600; /*Ponemos la letras en negrita*/
     transition: .3s ease all;
 }
 
-.paginacion button:hover {
-    background-color: var(--color-back-active);
-}
-
-/*Estilos Generales Botones Favoritos*/
+/*Boton Favorito*/
 .button {
     background: #7f8c8d;
     color: white;
@@ -81,15 +105,12 @@ body{
     text-decoration: none;
     box-shadow: 0px 3px 0px #373c3c;
 }
-
 .button span {
     margin-right: 10px;
 }
-
 .button.medium {
     width: 150px;
 }
-
 .button.radius {
     border-radius: 50px;
 }

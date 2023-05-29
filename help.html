@@ -12,10 +12,13 @@
 
 <body>
   <header>
-    <h1>
-      <!--Titulo Cabecera-->
-      <span>Cartelera de Cine</span>
-    </h1>
+    <div class="icono-cabecera">
+      <img src="/img/IconoCine.png" alt="">
+      <h1>
+        <!--Titulo Cabecera-->
+        <span>Cartelera de Cine</span>
+      </h1>
+    </div>
     <nav>
       <!--Menu Superior-->
       <ul>
@@ -27,16 +30,17 @@
   </header>
   <!-- Contenido principal de la página -->
   <main>
-    <div id="ayuda" class="ayuda">
-    <h2>Ayuda Cine App v.1</h2>
+    <div class="intro-pag">
+      <h2>Ayuda Cine App v.1</h2>
     </div>
+
 
     <p>Esta App te permite consultar la cartelera de cine utilizando la API de <a
         href="https://www.themoviedb.org/documentation/api" target="_blank">The movie database API.</a></p>
     <p>Para poder registrar su películas favoritas deberá <a href="index.html">Agregar Favorito</a> desde la cartelera
       y luego visualizar nuestros favoritos desde <a href="favorities.html">Mis Favoritas</a></p>
-      <p> Si tiene alguna sugerencia o inconveniente por favor complete el siguiente formulario y envíenoslo. Lo
-        contactaremos a la brevedad</p>
+    <p> Si tiene alguna sugerencia o inconveniente por favor complete el siguiente formulario y envíenoslo. Lo
+      contactaremos a la brevedad</p>
     <section class="sec_ayuda" id="sec_ayuda">
       <!-- Sección de texto de ayuda-->
       <div id="seccionmensajes" class="seccionmensajes">
@@ -44,24 +48,24 @@
           <!--Nombre-->
           <div class="input-contenedor-general">
             <label for="formName"><b>Nombre:</b></label>
-            <input type="text" id="formName" name="formName"><br><br>
+            <input type="text" id="formName" class="Input-grosor"><br><br>
           </div>
           <!--Email-->
           <div class="input-contenedor-general">
             <label for="formEmail"><b>Email:</b></label>
-            <input type="text" id="formEmail" name="formEmail"><br><br>
+            <input type="text" id="formEmail" class="Input-grosor"><br><br>
           </div>
           <!--Mensaje-->
           <div class="input-contenedor-general">
             <label for="formMsj"><b>Mensaje:</b></label>
-            <textarea id="formMsj" name="formMsj" rows="8" cols="30"></textarea>
+            <textarea id="formMsj" name="formMsj" class="Input-Mensaje"></textarea>
           </div>
           <!--Buttons-->
           <div>
-            <button type= "submit" class="button-limpiar" id="button-limpiar">
-              <span><strong>Limpiar</strong></span> 
-             </button>
-            <button type= "submit" class="button-enviar" id="button-enviar">
+            <button type="submit" class="button-limpiar" id="button-limpiar">
+              <span><strong>Limpiar</strong></span>
+            </button>
+            <button type="submit" class="button-enviar" id="button-enviar">
               <span><strong>Enviar</strong></span>
             </button>
           </div>
