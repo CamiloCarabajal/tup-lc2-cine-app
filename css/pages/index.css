@@ -19,7 +19,7 @@ body{
 }
 
 /*PELICULAS*/
-.sec_peliculas{
+#sec_peliculas{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     max-width: 1000px;
@@ -27,16 +27,17 @@ body{
     width: 100%;
     justify-content: space-between;
 }
-.contenedor-Peliculas{
-    margin-bottom: 10px;
+.contenedor-Peliculas {
+  margin-bottom: 10px;
 }
 
-.contenedor-Peliculas img{
-    width: 100%;
-    border-radius: 15px;
+.contenedor-Peliculas  img {
+  width: 100%;
+  border-radius: 15px;
 }
-.contenedor-Peliculas > p{
-    color:cornflowerblue;
+
+.contenedor-Peliculas > p {
+  color: cornflowerblue;
 }
 .contenedor-infopelicula {
     padding: 5px;
@@ -47,7 +48,7 @@ body{
   .contenedor-infopelicula > img {
     width: 100%;
     height: 300px;
-    object-fit: cover; /* Es para cubrir el  contenedor */
+    object-fit: contain; /* Es para cubrir el  contenedor */
     border-radius: 15px;
     margin-bottom: 10px;
   }
