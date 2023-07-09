@@ -38,11 +38,11 @@
     <section id="form-movie-new">
       <!--Seccion para agregar una pelicula favorita por codigo-->
       <p>Agregar Película Favorita por Código:</p>
-      <form action="" class="form-container"> <!--PONER CON UN INPUT-->
+      <form onsubmit="return false;" class="form-container"> <!--PONER CON UN INPUT-->
         <div>
-          <input type="text" name="fpelicula">
+          <input type="text" name="codigoPelicula" id="codigoPelicula">
         </div>
-        <button type="submit">Agregar</button>
+        <button type="button" onclick="agregarFavoritoCodigo()">Agregar</button>
       </form>
     </section>
 
