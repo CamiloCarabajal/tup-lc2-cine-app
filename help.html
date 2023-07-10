@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +8,6 @@
   <link rel="stylesheet" href="css/common.css" />
   <link rel="stylesheet" href="css/pages/help.css" />
 </head>
-
 <body>
   <header>
     <div class="icono-cabecera">
@@ -33,14 +31,9 @@
     <div class="intro-pag">
       <h2>Ayuda Cine App v.1</h2>
     </div>
-
-
-    <p>Esta App te permite consultar la cartelera de cine utilizando la API de <a
-        href="https://www.themoviedb.org/documentation/api" target="_blank">The movie database API.</a></p>
-    <p>Para poder registrar su películas favoritas deberá <a href="index.html">Agregar Favorito</a> desde la cartelera
-      y luego visualizar nuestros favoritos desde <a href="favorities.html">Mis Favoritas</a></p>
-    <p> Si tiene alguna sugerencia o inconveniente por favor complete el siguiente formulario y envíenoslo. Lo
-      contactaremos a la brevedad</p>
+    <p>Esta App te permite consultar la cartelera de cine utilizando la API de <a href="https://www.themoviedb.org/documentation/api" target="_blank">The movie database API.</a></p>
+    <p>Para poder registrar sus películas favoritas deberá <a href="index.html">Agregar Favorito</a> desde la cartelera y luego visualizar nuestros favoritos desde <a href="favorities.html">Mis Favoritas</a></p>
+    <p>Si tiene alguna sugerencia o inconveniente, por favor complete el siguiente formulario y envíenoslo. Lo contactaremos a la brevedad.</p>
     <section class="sec_ayuda" id="sec_ayuda">
       <!-- Sección de texto de ayuda-->
       <div id="seccionmensajes" class="seccionmensajes">
@@ -48,12 +41,12 @@
           <!--Nombre-->
           <div class="input-contenedor-general">
             <label for="formName"><b>Nombre:</b></label>
-            <input type="text" id="formName" class="Input-grosor"><br><br>
+            <input type="text" id="formName" class="Input-grosor" /><br /><br />
           </div>
           <!--Email-->
           <div class="input-contenedor-general">
             <label for="formEmail"><b>Email:</b></label>
-            <input type="text" id="formEmail" class="Input-grosor"><br><br>
+            <input type="text" id="formEmail" class="Input-grosor" /><br /><br />
           </div>
           <!--Mensaje-->
           <div class="input-contenedor-general">
@@ -61,15 +54,14 @@
             <textarea id="formMsj" name="formMsj" class="Input-Mensaje"></textarea>
           </div>
           <!--Buttons-->
-          <div>
+          <div class="button-container">
             <button type="submit" class="button-limpiar" id="button-limpiar">
-              <span><strong>Limpiar</strong></span>
+              <strong>Limpiar</strong>
             </button>
             <button type="submit" class="button-enviar" id="button-enviar">
-              <span><strong>Enviar</strong></span>
+              <strong>Enviar</strong>
             </button>
           </div>
-
         </form>
       </div>
     </section>
@@ -81,12 +73,10 @@
     </section>
     <section id="sec-cine-result"></section>
     <!-- Sección donde se debe mostrar los mensajes de error -->
-    </section>
     <p></p>
   </main>
   <footer>
     <p>Desarrollado con ♥ - LC2</p>
   </footer>
 </body>
-
 </html>

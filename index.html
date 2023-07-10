@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TUP LC2 - TP Integrador - Cine</title>
   <!-- Estilos CSS -->
-  <link rel="stylesheet" href="css/common.css" />
-  <link rel="stylesheet" href="css/pages/index.css" />
-  <script src="js/pages/index.js" defer></script>
+  <link rel="stylesheet" href="/css/common.css" />
+  <link rel="stylesheet" href="/css/pages/index.css" />
+  <script src="/js/pages/index.js" defer></script>
+  <script src="/js/common.js" defer></script>
 </head>
 
 <body>
@@ -46,16 +47,12 @@
       </form>
     </section>
 
-    <section id="sec-messages">
-      <!--Agregamos el mensaje-->
-      <!--Aca va el form de mensajes(que todavia no funciona)-->
-      <!--<form>
-      <p class="mensaje-favoritos" id="agregada-favoritos">Película agregada con éxito</p>
-      <p class="mensaje-favoritos" id="error-favoritos">Error: La Película seleccionada no se encuentra en la API o se produjo un
-        error al consultar</p>
-        <p class="mensaje-favoritos" id="ya-existe">La Película ingresada ya se encuentra almacenada</p>
-      </form> -->
-
+    <section id="sec-messages" class="sec-messages">
+        <ul>
+          <li id="Success">Película agregada con éxito.</li>
+          <li id="Warning">La Película ingresada ya se encuentra almacenada.</li>
+          <li id="Error">Error: La Película seleccionada no se encuentra en la API o se produjo un error al consultar.</li>
+        </ul>
       <!--Seccion para mensajes-->
     </section>
     <section id="sec_peliculas"> <!--Mostramos la pelicula-->
@@ -65,10 +62,7 @@
         <div class="contenedor-infopelicula">
        <!--Las peliculas se deberian mostrar por el js-->
         </div>
-
       </div>
-
-
     </section>
     <section id="sec_paginador_peliculas">
       <!--Seccion de Paginacion-->
